@@ -1,0 +1,24 @@
+.footer {
+  background:#231F79;
+}
+
+.icon_footer{
+  color: white;
+  margin: 1rem;
+}
+.icon_cont{
+  margin-right: 5rem;
+}
+
+.naviba{
+  margin-left: -1rem;
+
+
+}
+
+.nav-link {
+  color: white;
+}
+/* .link_footer:hover{
+  color:#E24B23
+} */

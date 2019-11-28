@@ -1,0 +1,5 @@
+export {default as SEO} from './seo'
+export {default as Layout} from './layout'
+export {default as Image} from './image'
+export {default as Navb} from './navbar'
+export {default as Footer} from './footer'
