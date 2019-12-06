@@ -1,13 +1,38 @@
 .logo{
   width:7vw;
 }
-.menus{
+
+
+.navbar-light .navbar-nav .nav-link.menu_toggler{
   font-size: 2vw;
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color:#FA5B9F;
+
+
 }
+
+hr.upl{
+  border: 2px solid #4B2157;
+  transform: translateX(-50%);
+margin-bottom: -2rem;
+}
+
+.lnmargin{
+margin-top: 45px;
+}
+
+hr.dwnl{
+  border: 2px solid #4B2157;
+
+}
+
+.marginmenu{
+  margin-left: 20vw;
+}
+
 nav.nav_bar{
   z-index: 1031;
+  mix-blend-mode: screen;
   /* min-height:8vh; */
 }
 

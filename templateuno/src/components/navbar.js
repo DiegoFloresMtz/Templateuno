@@ -15,7 +15,7 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {motion} from 'framer-motion';
 
-import logo from '../images/logo/logo.svg'
+import logo from './../images/logo/logo.svg'
 import './styles/navb.css';
 
 export default class Navb extends Component {
@@ -42,9 +42,9 @@ export default class Navb extends Component {
         </NavbarBrand>
         {/* <NavbarToggler onClick={this.toggle} /> */}
           <Nav className="ml-auto" navbar>
-            <NavItem className="pt-1">
-                <NavLink className="menus" onClick={this.toggle}>
-                  MENU
+            <NavItem className="">
+                <NavLink className="menu_toggler" onClick={this.toggle}>
+                  MENÚ
                 </NavLink>
               </NavItem>
           </Nav>
@@ -59,10 +59,11 @@ export default class Navb extends Component {
 function SlideMenu({isOpen,toggle}){
   return(
     <Container fluid className={`slideout ${isOpen&&' slidein'} d-flex flex-column justify-content-around align-items-start`} >
-      <Nav>
+      <Nav className="marginmenu">
       <NavLink>
-  <hr className="line" width="25%" align="left"/>
+        <hr className="upl lnmargin" width="15%" align="left"/>
         <ul className="menuinicio">
+
         INICIO<br/>
   <a className="menutext" href="">¿Qué hacemos?</a> <br/>
   <a className="menutext" href="">Como funciona</a> <br/>
@@ -70,7 +71,16 @@ function SlideMenu({isOpen,toggle}){
   <a className="menutext" href="">Precios</a> <br/>
 
 </ul>
-  <hr className="line" width="25%" align="left"/>
+  <hr className="dwnl" width="40%" align="center"/>
+  <div className="text-center">
+    <a className="icon_footer" align="left" target="_blank" rel="noopener noreferrer" href="facebook.com">
+      <FontAwesomeIcon size="lg" icon={['fab','facebook-f']}/>
+    </a>
+
+    <a className="icon_footer" align="left" target="_blank" rel="noopener noreferrer" href="instagram.com">
+      <FontAwesomeIcon size="lg" icon={['fab','instagram']}/>
+    </a>
+  </div>
       </NavLink>
 
       </Nav>
