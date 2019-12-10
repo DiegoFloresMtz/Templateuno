@@ -4,9 +4,7 @@ import {
   Container,
   Row,
   Col,
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -36,15 +34,15 @@ export default class Navb extends Component {
     const {isOpen} = this.state
     return (
       <>
-      <Navbar className="nav_bar bg-transparent" fixed="top" expand={true} light>
+      <Navbar className="nav_bar bg-transparent " fixed="top"  light>
         <NavbarBrand tag={Link} to="/">
           <img src={logo} className="img-fluid logo" alt=""/>
         </NavbarBrand>
         {/* <NavbarToggler onClick={this.toggle} /> */}
           <Nav className="ml-auto" navbar>
-            <NavItem className="">
-                <NavLink className="menu_toggler" onClick={this.toggle}>
-                  MENÚ
+            <NavItem className="pt-1">
+                <NavLink tag={Link} to="/" className="menus" onClick={this.toggle}>
+                  MENU
                 </NavLink>
               </NavItem>
           </Nav>
@@ -59,31 +57,47 @@ export default class Navb extends Component {
 function SlideMenu({isOpen,toggle}){
   return(
     <Container fluid className={`slideout ${isOpen&&' slidein'} d-flex flex-column justify-content-around align-items-start`} >
-      <Nav className="marginmenu">
-      <NavLink>
-        <hr className="upl lnmargin" width="15%" align="left"/>
-        <ul className="menuinicio">
+      <Container>
+        <Row>
+          <Col xs={1}>
+            <hr className="line hr_pink" align=""/>
+          </Col>
+          <Col xs={11}>
+              <Nav vertical>
+                <h3 className="menuinicio">INICIO</h3>
+                <br/>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">¿Qué hacemos?</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como funciona</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Casos de éxito</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#precios">Precios</NavLink>
+                </NavItem>
+              </Nav>
+              <br/>
+              <hr className="line hr_pink" width="25%" align="left"/>
+              <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Nutri.and.love/">
+                  <FontAwesomeIcon className="text-white" size="2x" icon={['fab','facebook']}/>
+                </a>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nutri.and.love/?hl=es-la">
+                  <FontAwesomeIcon className="text-white" size="2x" icon={['fab','instagram']}/>
+                </a>
 
-        INICIO<br/>
-  <a className="menutext" href="">¿Qué hacemos?</a> <br/>
-  <a className="menutext" href="">Como funciona</a> <br/>
-  <a className="menutext" href="">Casos de éxito</a> <br/>
-  <a className="menutext" href="">Precios</a> <br/>
+              </div>
+          </Col>
+        </Row>
+      </Container>
 
-</ul>
-  <hr className="dwnl" width="40%" align="center"/>
-  <div className="text-center">
-    <a className="icon_footer" align="left" target="_blank" rel="noopener noreferrer" href="facebook.com">
-      <FontAwesomeIcon size="lg" icon={['fab','facebook-f']}/>
-    </a>
-
-    <a className="icon_footer" align="left" target="_blank" rel="noopener noreferrer" href="instagram.com">
-      <FontAwesomeIcon size="lg" icon={['fab','instagram']}/>
-    </a>
-  </div>
-      </NavLink>
-
-      </Nav>
 
     </Container>
   )
