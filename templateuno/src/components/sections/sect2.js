@@ -7,7 +7,7 @@ import imga4 from "../../images/pattern.jpg";
 import '../styles/sect2.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-export default class Sect3 extends Component{
+export default class Sect2 extends Component{
   render(){
     return(
       <Col className="bodie">

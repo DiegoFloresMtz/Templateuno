@@ -11,8 +11,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Sect1/>
-   <Sect2/>
     <Sect3/>
+   <Sect2/>
+
 
   </Layout>
 )
