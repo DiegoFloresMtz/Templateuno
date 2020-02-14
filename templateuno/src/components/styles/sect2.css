@@ -1,0 +1,40 @@
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
+.bodie{
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.imgaiL{
+    position:relative;
+    width: 50%;
+    right: 2%;
+}
+
+.imgaiR{
+    position: relative;
+    width: 50%;
+    left:50%;
+
+}
+.posit{
+  margin-right: -100px;
+}
+
+.textformR{
+  margin-top: 1rem;
+  position: absolute;
+  font-size: 1rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.textformL{
+  margin-top: 1rem;
+  left:50%;
+  position: absolute;
+  font-size: 1rem;
+  width: 50%;
+    margin-bottom: 1rem;
+}

@@ -13,7 +13,7 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 // import {motion} from 'framer-motion';
 
-import logo from './../images/logo/logo.svg'
+import logo from '../images/logo/logo.svg'
 import './styles/navb.css';
 
 export default class Navb extends Component {
@@ -41,13 +41,13 @@ export default class Navb extends Component {
         {/* <NavbarToggler onClick={this.toggle} /> */}
           <Nav className="ml-auto" navbar>
             <NavItem className="pt-1">
-                <NavLink tag={Link} to="/" className="menus" onClick={this.toggle}>
-                  MENU
+                <NavLink className="menus" onClick={this.toggle}>
+                  {isOpen?"CERRAR":"MENU"}
                 </NavLink>
               </NavItem>
           </Nav>
       </Navbar>
-      <SlideMenu toggle={this.toggle} isOpen={this.state.isOpen} />
+      <SlideMenu toggle={this.toggle} isOpen={isOpen} />
       </>
 
     );
@@ -56,7 +56,7 @@ export default class Navb extends Component {
 
 function SlideMenu({isOpen,toggle}){
   return(
-    <Container fluid className={`slideout ${isOpen&&' slidein'} d-flex flex-column justify-content-around align-items-start`} >
+    <Container fluid className={`menu_layout ${isOpen?'slidein':'slideout'} d-flex flex-column justify-content-around align-items-start`} >
       <Container>
         <Row>
           <Col xs={1}>
@@ -64,23 +64,23 @@ function SlideMenu({isOpen,toggle}){
           </Col>
           <Col xs={11}>
               <Nav vertical>
-                <h3 className="menuinicio">INICIO</h3>
+                <h3 className="menuinicio">Inicio</h3>
                 <br/>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">¿Qué hacemos?</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">Quienes somos</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como funciona</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como lo hago mejor</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Casos de éxito</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Paquetes o clientes felices</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#precios">Precios</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#precios">Galeria</NavLink>
                 </NavItem>
               </Nav>
               <br/>
-              <hr className="line hr_pink" width="25%" align="left"/>
+              <hr className="line hr_pink" width="13%" align="left"/>
               <div>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Nutri.and.love/">
                   <FontAwesomeIcon className="text-white" size="2x" icon={['fab','facebook']}/>
