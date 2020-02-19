@@ -1,17 +1,25 @@
-import React from "react";
-import {Container, Col, Row, Button} from 'reactstrap';
+import React   from "react";
+import {Container, Col, Row, Button, UncontrolledPopover, PopoverHeader, PopoverBody} from 'reactstrap';
 import imga1 from "../../images/portfolio/uno.png";
 import imga2 from "../../images/portfolio/dos.png";
 import imga3 from "../../images/portfolio/tres.png";
 import imga4 from "../../images/portfolio/cuatro.png";
 import imga5 from "../../images/portfolio/cinco.png";
 import '../styles/sect3.css';
+import Plx from "react-plx";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 export default() => (
-  <Container className="imgshow">
+
+
+  <div className="imgshow">
+<ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" >
+
+  <Container>
     <Row>
       <Col sm="3" md={{ size: 3, order: 1 }}>
-<Button className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
   <img src={imga1}
         className="shadow-lg bg-transparent rounded"
         alt=""/>
@@ -19,7 +27,7 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 2 }}>
-<Button className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
   <img src={imga2}
         className="shadow-lg bg-transparent rounded"
           alt=""/>
@@ -27,7 +35,7 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 4 }}>
-<Button className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
   <img src={imga3}
       className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -35,14 +43,142 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 3 }}>
-<Button className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
   <img src={imga4}
         className="shadow-lg bg-transparent rounded"
           alt=""/>
 </Button>
     </Col>
 </Row>
+<br/>
+
+<Row>
+  <Col sm="3" md={{ size: 3, order: 1 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga1}
+    className="shadow-lg bg-transparent rounded"
+    alt=""/>
+</Button>
+  </Col>
+
+
+  <Col sm="3" md={{ size: 3, order: 2 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga2}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 4 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga3}
+  className="shadow-lg bg-transparent rounded"
+  alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 3 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga4}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+</Col>
+</Row>
+<br/>
+
+
+<Row>
+  <Col sm="3" md={{ size: 3, order: 1 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga1}
+    className="shadow-lg bg-transparent rounded"
+    alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 2 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga2}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 4 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga3}
+  className="shadow-lg bg-transparent rounded"
+  alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 3 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga4}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+</Col>
+</Row>
+<br/>
+
+
+<Row>
+  <Col sm="3" md={{ size: 3, order: 1 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga1}
+    className="shadow-lg bg-transparent rounded"
+    alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 2 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga2}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 4 }}>
+<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<img src={imga3}
+  className="shadow-lg bg-transparent rounded"
+  alt=""/>
+</Button>
+  </Col>
+
+  <Col sm="3" md={{ size: 3, order: 3 }}>
+<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<img src={imga4}
+    className="shadow-lg bg-transparent rounded"
+      alt=""/>
+</Button>
+</Col>
+</Row>
+<br/>
 
   </Container>
+  </ScrollAnimation>
+<UncontrolledPopover trigger="legacy" placement="auto" target="PopoverLegacy">
+   <PopoverHeader>Tu Arte</PopoverHeader>
+   <PopoverBody>
+     Aqui va tu reseña alv
 
+     </PopoverBody>
+     </UncontrolledPopover>
+
+     <UncontrolledPopover trigger="legacy" placement="auto" target="tacos">
+        <PopoverHeader>Mi arte</PopoverHeader>
+        <PopoverBody>
+          Mira namas este pack
+          <img src={imga4}
+              className="shadow-lg bg-transparent rounded"
+                alt=""/>
+        </PopoverBody>
+          </UncontrolledPopover>
+
+</div>
 )
