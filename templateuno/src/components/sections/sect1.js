@@ -10,8 +10,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const ParallaxDataI=[
   {
-    start:"200px",
-    duration:"1200px",
+    start:"self",
+    duration:"2000px",
     properties:[
       {
           startValue: 1,
@@ -24,7 +24,7 @@ const ParallaxDataI=[
           property:"blur"
       },
       {startValue:0,
-      endValue:1000,
+      endValue:2000,
     property:"translateY"}
       ]
   }
@@ -33,7 +33,7 @@ const ParallaxDataI=[
 const ParallaxDate=[
   {
     start:"self",
-    duration:"50px",
+    duration:"100px",
     properties:[
       {
           startValue: 1,
@@ -41,7 +41,7 @@ const ParallaxDate=[
           property:"opacity"
       },
       {startValue:0,
-      endValue:50,
+      endValue:100,
     property:"translateY"}
       ]
   }
