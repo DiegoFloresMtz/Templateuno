@@ -41,10 +41,9 @@ export default class Sect2 extends Component{
 
     <Col className="textformR">
       <h2>
-        Titulo
+        Nombre de la Obra
       </h2>
-        Cat ipsum dolor sit amet
-        purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box.Sit in box jump off balcony, onto stranger's head
+        Reseña pequeña, ser o no ser.
 
         </Col>
     </Row>
@@ -68,9 +67,10 @@ export default class Sect2 extends Component{
 
     <Col className="textformL">
       <h2>
-        Titulo
+        Nombre de la Obra
       </h2>
-          Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
+      Reseña pequeña, ser o no ser.
+
         </Col>
     </Row>
   </Col>
@@ -92,9 +92,10 @@ export default class Sect2 extends Component{
     </Col>
     <Col className="textformR">
       <h2>
-        Titulo
+        Nombre de la Obra
       </h2>
-          Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
+      Reseña pequeña, ser o no ser.
+
         </Col>
     </Row>
   </Col>

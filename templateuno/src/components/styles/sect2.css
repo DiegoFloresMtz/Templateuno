@@ -1,12 +1,15 @@
 /** {*/
     /*box-sizing: border-box;*/
 /*}*/
-
+h2{
+  font-size: 2rem;
+}
 .imgaiL{
     position:relative;
     width: 50%;
-    right: 2%;
+
 }
+
 
 .imgaiR{
     position: relative;
@@ -21,22 +24,22 @@
 .textformR{
   top:20%;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.5vw;
   width: 40%;
 }
 
 .textformL{
   top:20%;
-  left:50%;
+  left:60%;
   position: absolute;
-  font-size: 1rem;
-  width: 50%;
+  font-size: 1.5vw;
+  width: 40%;
 }
 
 
 .jumbotron{
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .imglo{
@@ -51,8 +54,13 @@ padding: 0
 }
 
 .bodis{
+font-size: 3vw;
+font-style:oblique;
+font-weight: bold;
+text-align: center;
 
 }
+
 .bodiees{
   background-color: #231F79;
   background-color: transparent;

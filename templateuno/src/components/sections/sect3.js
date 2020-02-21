@@ -15,6 +15,9 @@ export default() => (
 <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" >
 
   <Container>
+    <p className="bodis">
+      Portafolio Profesional
+    </p>
     <Row>
       <Col sm="3" md={{ size: 3, order: 1 }}>
 <Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
