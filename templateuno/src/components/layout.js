@@ -19,7 +19,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css'
 
-import {Navb,Footer} from "./"
+import {Footer} from "./"
 import "./styles/layout.css"
 
 library.add(
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Navb siteTitle={data.site.siteMetadata.title} />
+    
     <main>{children}</main>
     <Footer/>
     </>

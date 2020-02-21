@@ -57,7 +57,7 @@ padding: 0
   background-color: #231F79;
   background-color: transparent;
   margin-top: -15rem;
-margin-bottom: -15rem;
+margin-bottom: 0rem;
 }
 
 
@@ -73,7 +73,7 @@ margin-bottom: -15rem;
 
 
 .image-container {
-  background-image: url("../../images/portfolio/cinco.png");
+  background-image: url("../../images/portfolio/bgtwo.jpg");
   background-size: cover;
   position:sticky;
   height: 100vh;
@@ -95,4 +95,53 @@ margin-bottom: -15rem;
   left: 50%;
   transform: translate(-50%, -50%);
   mix-blend-mode:screen;
+}
+
+
+@media(min-width:320px) and (max-width:790px){
+  .bodiees{
+    background-color: #231F79;
+    background-color: transparent;
+    margin-top: 0rem;
+  margin-bottom: 0rem;
+  }
+
+h2{
+  font-size: 1rem;
+  margin-top:-1rem;
+  margin-bottom:0.4rem;
+}
+
+
+  .textformR{
+    top:0%;
+    position: absolute;
+    font-size: .5rem;
+    width:50%;
+  }
+
+  .textformL{
+    top:0%;
+    left:50%;
+    position: absolute;
+    font-size: .5rem;
+    width:50%;
+  }
+
+  .imgaiL{
+      position:relative;
+      width:40%;
+      right: 0%;
+  }
+
+  .imgaiR{
+      position: relative;
+      width:40%;
+      left:55%;
+
+  }
+
+  .textoo{
+    font-size:1rem
+  }
 }

@@ -4,9 +4,7 @@ import imga1 from "../../images/portfolio/uno.png";
 import imga2 from "../../images/portfolio/dos.png";
 import imga3 from "../../images/portfolio/tres.png";
 import imga4 from "../../images/portfolio/cuatro.png";
-import imga5 from "../../images/portfolio/cinco.png";
 import '../styles/sect3.css';
-import Plx from "react-plx";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
@@ -19,7 +17,7 @@ export default() => (
   <Container>
     <Row>
       <Col sm="3" md={{ size: 3, order: 1 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
   <img src={imga1}
         className="shadow-lg bg-transparent rounded"
         alt=""/>
@@ -27,7 +25,7 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 2 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
   <img src={imga2}
         className="shadow-lg bg-transparent rounded"
           alt=""/>
@@ -35,7 +33,7 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 4 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
   <img src={imga3}
       className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -43,7 +41,7 @@ export default() => (
       </Col>
 
       <Col sm="3" md={{ size: 3, order: 3 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
   <img src={imga4}
         className="shadow-lg bg-transparent rounded"
           alt=""/>
@@ -54,7 +52,7 @@ export default() => (
 
 <Row>
   <Col sm="3" md={{ size: 3, order: 1 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga1}
     className="shadow-lg bg-transparent rounded"
     alt=""/>
@@ -63,7 +61,7 @@ export default() => (
 
 
   <Col sm="3" md={{ size: 3, order: 2 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga2}
     className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -71,7 +69,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 4 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga3}
   className="shadow-lg bg-transparent rounded"
   alt=""/>
@@ -79,7 +77,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 3 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga4}
     className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -91,7 +89,7 @@ export default() => (
 
 <Row>
   <Col sm="3" md={{ size: 3, order: 1 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga1}
     className="shadow-lg bg-transparent rounded"
     alt=""/>
@@ -99,7 +97,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 2 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga2}
     className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -107,7 +105,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 4 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga3}
   className="shadow-lg bg-transparent rounded"
   alt=""/>
@@ -115,7 +113,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 3 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga4}
     className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -127,7 +125,7 @@ export default() => (
 
 <Row>
   <Col sm="3" md={{ size: 3, order: 1 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga1}
     className="shadow-lg bg-transparent rounded"
     alt=""/>
@@ -135,7 +133,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 2 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga2}
     className="shadow-lg bg-transparent rounded"
       alt=""/>
@@ -143,7 +141,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 4 }}>
-<Button id="tacos" type="button" className="bg-transparent shadow-lg">
+<Button id="tacos" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga3}
   className="shadow-lg bg-transparent rounded"
   alt=""/>
@@ -151,7 +149,7 @@ export default() => (
   </Col>
 
   <Col sm="3" md={{ size: 3, order: 3 }}>
-<Button id="PopoverLegacy" type="button" className="bg-transparent shadow-lg">
+<Button id="PopoverLegacy" type="button" className="btno bg-transparent shadow-lg">
 <img src={imga4}
     className="shadow-lg bg-transparent rounded"
       alt=""/>

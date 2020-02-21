@@ -1,11 +1,9 @@
 import React from 'react';
-import {Col, Row, Container,Jumbotron } from 'reactstrap';
-import imga1 from "../../images/portfolio/cinco.png";
-import imga2 from "../../images/pattern.jpg";
-import imga3 from "../../images/portfolio/seis.jpg";
+import {Col,Jumbotron } from 'reactstrap';
+import imga1 from "../../images/portfolio/bgtwo.jpg";
+// CAMBIA LA IMAGEN EN SECT2
 import '../styles/sect2.css';
 import Plx from "react-plx";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const ParallaxDataI=[
@@ -60,7 +58,7 @@ const Example = () =>
       </div>
 
       <div>
-        Aqui va tu reseña eseeee
+        Fotógrafo/Taquero
       </div>
 
     </div>

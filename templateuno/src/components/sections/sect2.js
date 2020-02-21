@@ -3,7 +3,6 @@ import {Container, Col,Row,Jumbotron} from 'reactstrap';
 import imga1 from "../../images/bizz.jpg";
 import imga2 from "../../images/column.jpg";
 import imga3 from "../../images/moni.jpg";
-import imga4 from "../../images/pattern.jpg";
 import Plx from "react-plx";
 import '../styles/sect2.css';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -30,7 +29,7 @@ export default class Sect2 extends Component{
           <Plx  parallaxData={ParallaxDati}>
         <ScrollAnimation animateIn="fadeInRight"
           animateOut="fadeOutRight">
-        <Jumbotron className="shadow-lg bg-transparent  rounded">
+        <Jumbotron className="jumbotron-fluid shadow-lg bg-transparent  rounded">
 <Container>
   <Col>
     <Row>
@@ -56,7 +55,7 @@ export default class Sect2 extends Component{
 
 <ScrollAnimation animateIn="fadeInLeft"
   animateOut="fadeOutLeft">
-<Jumbotron className="shadow-lg bg-transparent rounded">
+<Jumbotron className="jumbotron-fluid shadow-lg bg-transparent rounded">
 <Container>
   <Col>
     <Row>
@@ -81,7 +80,7 @@ export default class Sect2 extends Component{
 
 <ScrollAnimation animateIn="fadeInRightBig"
   animateOut="fadeOutRightBig">
-<Jumbotron className="shadow-lg bg-transparent rounded">
+<Jumbotron className="jumbotron-fluid shadow-lg bg-transparent rounded">
 <Container>
   <Col>
     <Row>
