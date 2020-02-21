@@ -1,6 +1,44 @@
 /** {*/
     /*box-sizing: border-box;*/
 /*}*/
+
+.imgaiL{
+    position:relative;
+    width: 50%;
+    right: 2%;
+}
+
+.imgaiR{
+    position: relative;
+    width: 50%;
+    left:50%;
+
+}
+.posit{
+  margin-right: -100px;
+}
+
+.textformR{
+  top:20%;
+  position: absolute;
+  font-size: 1rem;
+  width: 40%;
+}
+
+.textformL{
+  top:20%;
+  left:50%;
+  position: absolute;
+  font-size: 1rem;
+  width: 50%;
+}
+
+
+.jumbotron{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .imglo{
 position:sticky;
 display:inline-flex;
@@ -8,9 +46,21 @@ width:fill;
 z-index: 10;
 }
 
-.bodie{
-  background-color: #231F79;
+.posita{
+padding: 0
 }
+
+.bodis{
+
+}
+.bodiees{
+  background-color: #231F79;
+  background-color: transparent;
+  margin-top: -15rem;
+margin-bottom: -15rem;
+}
+
+
 
 .titule{
   position: sticky;
